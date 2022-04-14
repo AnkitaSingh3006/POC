@@ -1,0 +1,21 @@
+<!--interpolation or data binding-->
+<h1>
+  hello {{title}}<br>{{2+2}}
+</h1>
+<!--templates-->
+<input type="text" #box name="user" placeholder="enter your name">
+<button onclick="getVal(box.value)">call function</button>
+
+<!--Routing-->
+<header>
+  <nav>
+    <ul class="nav nav-tabs">
+      <li class="nav-item"><a class="nav-link active" routerLink="/">Home</a></li>
+      <li  class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
+      <li  class="nav-item"><a class="nav-link" routerLink="/product">Products</a></li>
+      <li  class="nav-item"><a class="nav-link" routerLink="/contact">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+<router-outlet></router-outlet>
+
