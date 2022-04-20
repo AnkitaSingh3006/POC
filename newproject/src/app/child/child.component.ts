@@ -2,16 +2,11 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-child',
-  template: `
-  <div class="notification is-primary">
-  <h3>child</h3>
-  Say{{message}}
-  </div>
-  `,
+  templateUrl: './child.component.html',
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
-  @Input() message: string;
+@Input() childMessage : any ;
   constructor() { }
 
   ngOnInit(): void {
