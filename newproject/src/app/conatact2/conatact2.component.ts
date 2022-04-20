@@ -15,7 +15,7 @@ export class Conatact2Component implements OnInit {
   ngOnInit(): void {
   }
 
- form = new FormGroup({
+  form = new FormGroup({
     "firstName": new FormControl("", Validators.required),
     "password": new FormControl("", Validators.required),
   });
@@ -24,6 +24,6 @@ export class Conatact2Component implements OnInit {
   onSubmit() {
     console.log("reactive form submitted");
     console.log(this.form);
-}
+  }
 
 }

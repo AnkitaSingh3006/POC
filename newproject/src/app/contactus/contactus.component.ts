@@ -13,7 +13,7 @@ export class ContactusComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(form:NgForm){
+  onSubmit(form: NgForm) {
     console.log(form)
   }
 

@@ -16,13 +16,18 @@ import { FormsModule } from '@angular/forms';
 import { Conatact2Component } from './conatact2/conatact2.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+/**********************sharing data between component******************/
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+
 /***********************Routing*************************/
 const appRoutes:Routes=[
   {path:'',component:HomeComponent},
   {path:'about',component:AboutComponent},
   {path:'product',component:ProductComponent},
   {path:'contactus',component:ContactusComponent},
-  {path:'conatact2',component:Conatact2Component}
+  {path:'conatact2',component:Conatact2Component},
+  {path:'parent',component:ParentComponent}
 ]
 @NgModule({
   declarations: [
@@ -32,6 +37,8 @@ const appRoutes:Routes=[
     ProductComponent,
     ContactusComponent,
     Conatact2Component,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
