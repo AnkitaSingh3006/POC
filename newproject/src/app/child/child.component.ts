@@ -6,7 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
-@Input() childMessage : any ;
+  @Input() childMessage: any;
+
   constructor() { }
 
   ngOnInit(): void {
