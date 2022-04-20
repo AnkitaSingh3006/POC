@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
 })
 export class SiblingComponent implements OnInit {
   message: any;
-  subscription: Subscription
+  subscription: any;
   constructor(private data: DataService) { }
 
   ngOnInit(): void {
