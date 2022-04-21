@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Subscription } from 'rxjs';
 
@@ -7,13 +7,13 @@ import { Subscription } from 'rxjs';
   templateUrl: './parent3.component.html',
   styleUrls: ['./parent3.component.css']
 })
-export class Parent3Component implements OnInit {
-  message: any;
-  subscription: any;
+export class Parent3Component implements OnInit, OnDestroy {
+  message: string="";
+  subscription: Subscription;
   constructor(private data: DataService) { }
 
   ngOnInit(): void {
-    this.subscription = this.data.currentMessage.subscribe(this.message, this.message = this.message)
+    this.subscription = this.data.currentMessage.subscribe(message => this.message = message)
   }
   ngOnDestroy() {
     this.subscription.unsubscribe();

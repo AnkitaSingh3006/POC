@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Subscription } from 'rxjs';
 @Component({
@@ -6,9 +6,11 @@ import { Subscription } from 'rxjs';
   templateUrl: './sibling.component.html',
   styleUrls: ['./sibling.component.css']
 })
-export class SiblingComponent implements OnInit {
-  message: any;
-  subscription: any;
+export class SiblingComponent implements OnInit, OnDestroy {
+
+  message: string="";
+  subscription : Subscription;
+
   constructor(private data: DataService) { }
 
   ngOnInit(): void {
