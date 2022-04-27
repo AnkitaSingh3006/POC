@@ -8,8 +8,8 @@ import { Subscription } from 'rxjs';
 })
 export class SiblingComponent implements OnInit, OnDestroy {
 
-  message: string="";
-  subscription : Subscription;
+  message: string = "";
+  public subscription: Subscription = new Subscription();
 
   constructor(private data: DataService) { }
 

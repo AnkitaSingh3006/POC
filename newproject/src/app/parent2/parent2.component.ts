@@ -11,7 +11,8 @@ export class Parent2Component implements OnInit {
 
   ngOnInit(): void {
   }
-parentFunction(data:any){
-  document.write(data)
-}
+  public message: string = "";
+  parentFunction(data: string) {
+    this.message = data;
+  }
 }

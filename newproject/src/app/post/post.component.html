@@ -1,0 +1,18 @@
+<h2>Call post API in Angular</h2>
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+  <div>
+    <input type="text" name="name" ngModel placeholder="name">
+  </div>
+  <div>
+    <input type="text" name="address" ngModel placeholder="address">
+  </div>
+  <div>
+    <input type="text" name="email" ngModel placeholder="email">
+  </div>
+  <div>
+    <input type="text" name="rating" ngModel placeholder="rating">
+  </div>
+  <div>
+    <button type="submit"> Submit data</button>
+  </div>
+</form><p>post works!</p>

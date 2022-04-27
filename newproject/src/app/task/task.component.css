@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.mainblock{
+    border: 2px solid red;
+    width: 40%;
+    height: 640px;
+    margin-left: 30px;
+    padding: 20px;
+    background-color: #041930;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mainblock .btn{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+}
+.block ul li{
+    display: inline;  
+}
+.otp input{
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    width: 40px;
+}

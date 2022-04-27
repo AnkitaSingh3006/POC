@@ -8,8 +8,8 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./parent3.component.css']
 })
 export class Parent3Component implements OnInit, OnDestroy {
-  message: string="";
-  subscription: Subscription;
+  message: string = "";
+  public subscription: Subscription = new Subscription();
   constructor(private data: DataService) { }
 
   ngOnInit(): void {

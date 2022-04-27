@@ -23,16 +23,24 @@ import { Parent2Component } from './parent2/parent2.component';
 import { Child2Component } from './child2/child2.component';
 import { Parent3Component } from './parent3/parent3.component';
 import { SiblingComponent } from './sibling/sibling.component';
+import { TaskComponent } from './task/task.component';
+
+/*******************post API***************/
+import { HttpClientModule} from '@angular/common/http';
+import { PostComponent } from './post/post.component'
 
 /***********************Routing*************************/
 const appRoutes:Routes=[
-  {path:'',component:HomeComponent},
+  {path:'home',component:HomeComponent},
   {path:'about',component:AboutComponent},
   {path:'product',component:ProductComponent},
   {path:'contactus',component:ContactusComponent},
   {path:'conatact2',component:Conatact2Component},
   {path:'parent',component:ParentComponent},
   {path:'parent2',component:Parent2Component},
+  {path:'parent3',component:Parent3Component},
+  {path:'task',component:TaskComponent},
+  {path:'post',component:PostComponent},
 ]
 @NgModule({
   declarations: [
@@ -48,6 +56,8 @@ const appRoutes:Routes=[
     Child2Component,
     Parent3Component,
     SiblingComponent,
+    TaskComponent,
+    PostComponent,
 
   ],
   imports: [
@@ -55,7 +65,8 @@ const appRoutes:Routes=[
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
