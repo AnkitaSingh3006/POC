@@ -13,7 +13,7 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
   }
   onSubmit(data:any){
-    this.http.post('http://localhost:3000/user',data)
+    this.http.post('http://localhost:3000/posts',data)
     .subscribe((result)=>{
       console.warn("result",result)
     })

@@ -29,6 +29,7 @@ import { TaskComponent } from './task/task.component';
 import { HttpClientModule} from '@angular/common/http';
 import { PostComponent } from './post/post.component'
 
+
 /***********************Routing*************************/
 const appRoutes:Routes=[
   {path:'home',component:HomeComponent},
@@ -41,6 +42,7 @@ const appRoutes:Routes=[
   {path:'parent3',component:Parent3Component},
   {path:'task',component:TaskComponent},
   {path:'post',component:PostComponent},
+  
 ]
 @NgModule({
   declarations: [
