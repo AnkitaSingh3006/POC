@@ -1,1 +1,73 @@
-<p>task works!</p>
+<script src="https://kit.fontawesome.com/0e052eb6e4.js" crossorigin="anonymous"></script>
+<div class="body">
+
+    <div class="mainblock">
+        <p class="mainheading">Just a few simple steps before we know it's you</p>
+        <div class="mainblock-btn">
+            <button class="btn" type="button" [ngClass]="{ color: selectedBlock >= '1' }" (click)="set(Step1)">1</button>
+            <button class="btn" type="button" [ngClass]="{ color: selectedBlock >= '2' }" (click)="set(Step2)">2</button>
+            <button class="btn" type="button" [ngClass]="{ color: selectedBlock >= '3' }" (click)="set(Step3)">3</button>
+            <button class="btn" type="button" [ngClass]="{ color: selectedBlock >= '4' }" (click)="set(Step4)">4</button>
+            <div class="joiner"></div>
+        </div>
+        <div class="step">
+            <div *ngIf="selectedBlock == Step1">
+                <p class="step-subhead">Your registered mobile number</p>
+                <form>
+                    <div class="phonenumber">
+                        <input type="text" placeholder="9876543210">
+                    </div>
+                    <button class="login-btn" (click)="set(Step2)">Login &#10132;</button>
+                </form>
+            </div>
+        </div>
+        <div class="step" *ngIf="selectedBlock == Step2">
+            <p>Kindly verify the pin code of your residential address</p>
+            <form class="pincode">
+                <div>
+                    <input type="button" id="Pin1" name="pin" value="601302" (click)="set(Step3)">
+                </div>
+                <div>
+                    <input type="button" id="Pin2" name="pin" value="208916" (click)="set(Step3)">
+                </div>
+                <div>
+                    <input type="button" id="Pin3" name="pin" value="112345" (click)="set(Step3)">
+                </div>
+                <div>
+                    <input type="button" id="Pin4" name="pin" value="602716" (click)="set(Step3)">
+                </div>
+            </form>
+        </div>
+        <div class="step" *ngIf="selectedBlock == Step3">
+            <p>Kindly verify your year of birth</p>
+            <form class="dob">
+                <div>
+                    <input type="button" id="year1" name="year" value="1986" (click)="set(Step4)">
+                </div>
+                <div>
+                    <input type="button" id="year2" name="year" value="1987" (click)="set(Step4)">
+                </div>
+                <div>
+                    <input type="button" id="year3" name="year" value="1985" (click)="set(Step4)">
+                </div>
+                <div>
+                    <input type="button" id="year4" name="year" value="1992" (click)="set(Step4)">
+                </div>
+            </form>
+        </div>
+        <div class="step" *ngIf="selectedBlock == Step4">
+            <div>
+                <p>Enter the OTP</p>
+                <form>
+                    <div class="otp"><input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                    </div>
+                    <button class="login-btn"  (click)="set(Step1)">Login &#10132;</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

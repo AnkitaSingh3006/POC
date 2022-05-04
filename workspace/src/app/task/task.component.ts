@@ -7,7 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskComponent implements OnInit {
 
-  constructor() { }
+  Step1 = "1";
+  Step2 = "2";
+  Step3 = "3";
+  Step4 = "4";
+
+  selectedBlock: string = "";
+
+  constructor() {
+    this.selectedBlock = this.Step1
+  }
+  set(step: string) {
+    console.log(step);
+    this.selectedBlock = step;
+  }
 
   ngOnInit(): void {
   }
