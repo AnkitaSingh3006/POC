@@ -1,15 +1,15 @@
-<div class="body">
+<div class="outerblock">
 
     <div class="mainblock">
         <p class="mainheading">Just a few simple steps before we know it's you</p>
         <div class="mainblock-btn">
-            <button class="btn" type="button" [ngClass]="{ color: selectedBlock >= '1' }"
+            <button class="btn" type="button" [ngClass]="{ color: parseInt(selectedBlock) >=  parseInt('1') }"
                 (click)="set(Step1)">1</button>
-            <button class="btn" type="button" [ngClass]="{ color: selectedBlock >= '2' }"
+            <button class="btn" type="button" [ngClass]="{ color: parseInt(selectedBlock) >=  parseInt('2') }"
                 (click)="set(Step2)">2</button>
-            <button class="btn" type="button" [ngClass]="{ color: selectedBlock >= '3' }"
+            <button class="btn" type="button" [ngClass]="{ color: parseInt(selectedBlock) >=  parseInt('3') }"
                 (click)="set(Step3)">3</button>
-            <button class="btn" type="button" [ngClass]="{ color: selectedBlock >= '4' }"
+            <button class="btn" type="button" [ngClass]="{ color: parseInt(selectedBlock) >=  parseInt('4') }"
                 (click)="set(Step4)">4</button>
             <div class="joiner"></div>
         </div>
@@ -63,7 +63,7 @@
                 <p class="step-subhead">Enter the OTP</p>
                 <form>
                     <div class="otp">
-                        <input type="text" id="ist" maxlength="1" onkeyup="clickEvent(this,'sec')">&nbsp;
+                        <input type="text" id="first" maxlength="1" onkeyup="clickEvent(this,'sec')">&nbsp;
                         <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">&nbsp;
                         <input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">&nbsp;
                         <input type="text" id="fourth" maxlength="1">&nbsp;
