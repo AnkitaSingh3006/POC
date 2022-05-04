@@ -25,6 +25,10 @@ export class TaskComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
+  function clickEvent(first: any, last: any) {
+    if (first.value.length) {
+      document.getElementById(last)?.focus();
+    }
 
 }
+

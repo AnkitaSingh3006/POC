@@ -51,17 +51,18 @@
     line-height: 60px;
 }
 .step-subhead{
-    font-size: 20px;
+    font-size: 19px;
 }
 .phonenumber input{
     width: 90%;
-    height: 50px;
+    height: 60px;
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     padding: 10px;
     color: white;
     border-radius: 5px;
     outline: none;
+    font-size: 16px;
 }
 .phonenumber input::placeholder{
     color: white;
@@ -92,6 +93,7 @@
     text-align: left;
     padding: 10px;
     border-radius: 5px;
+    font-size: 16px;
 }
 .dob input{
     width: 100%;
@@ -102,15 +104,19 @@
     text-align: left;
     padding: 10px;
     border-radius: 5px;
+    font-size: 16px;
 }
 .otp input{
     outline: none;
     width: 15%;
     height: 40px;
     border: none;
-    border-bottom: 2px solid rgb(1, 231, 231);
+    border-bottom: 2px solid #3eb7e5;
     background-color: transparent;
-    padding: 10px;   
+    color: white;
+    font-size: 30px;  
+    font-weight: bolder;
+    text-align: center;
 }
 .color{
     background-color: rgb(1, 231, 231);

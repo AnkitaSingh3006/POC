@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="step" *ngIf="selectedBlock == Step2">
-            <p>Kindly verify the pin code of your residential address</p>
+            <p class="step-subhead">Kindly verify the pin code of your residential address</p>
             <form class="pincode">
                 <div>
                     <input type="button" value="601302" (click)="set(Step3)">
@@ -42,7 +42,7 @@
             </form>
         </div>
         <div class="step" *ngIf="selectedBlock == Step3">
-            <p>Kindly verify your year of birth</p>
+            <p class="step-subhead">Kindly verify your year of birth</p>
             <form class="dob">
                 <div>
                     <input type="button" value="1986" (click)="set(Step4)">
@@ -60,13 +60,13 @@
         </div>
         <div class="step" *ngIf="selectedBlock == Step4">
             <div>
-                <p>Enter the OTP</p>
+                <p class="step-subhead">Enter the OTP</p>
                 <form>
                     <div class="otp">
-                        <input type="text">&nbsp;
-                        <input type="text">&nbsp;
-                        <input type="text">&nbsp;
-                        <input type="text">&nbsp;
+                        <input type="text" id="ist" maxlength="1" onkeyup="clickEvent(this,'sec')">&nbsp;
+                        <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">&nbsp;
+                        <input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">&nbsp;
+                        <input type="text" id="fourth" maxlength="1">&nbsp;
                     </div>
                     <button class="login-btn">Login &#10132;</button>
                 </form>
