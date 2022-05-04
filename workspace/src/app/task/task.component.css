@@ -61,6 +61,7 @@
     padding: 10px;
     color: white;
     border-radius: 5px;
+    outline: none;
 }
 .login-btn{
     width: 150px;
@@ -75,6 +76,9 @@
     display: flex;
     word-spacing: 50px;
     border-radius: 5px;
+}
+.login-btn:focus{
+    background-color: rgb(39, 193, 253);
 }
 .pincode input{
     width: 100%;
@@ -95,6 +99,14 @@
     text-align: left;
     padding: 10px;
     border-radius: 5px;
+}
+.otp input{
+    outline: none;
+    width: 15%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid rgb(1, 231, 231);
+    background-color: transparent;   
 }
 .color{
     background-color: rgb(1, 231, 231);
