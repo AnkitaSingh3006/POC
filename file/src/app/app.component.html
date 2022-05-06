@@ -1,0 +1,18 @@
+<h1>Attribute directive</h1>
+<p appHighlight>Hightlight me!</p>
+<p [appHighlight] = 'color'>Hightlight me!</p>
+
+<hr>
+
+
+<h2>Pick a highlight color</h2>
+<div>
+  <input type="radio" name="colors" (click)="color='lightgreen'">Green
+  <input type="radio" name="colors" (click)="color='yellow'">Yellow
+  <input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
+<p [appHighlight]="color">Highlight me!</p>
+<hr>
+<p [appHighlight]="color" defaultColor="violet">
+  Highlight me too!
+</p>
