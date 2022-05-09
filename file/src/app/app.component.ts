@@ -8,4 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'file';
   color = '';
+  searchText = '';
+  characters = [
+    'Ant-Man',
+    'Aquaman',
+    'Asterix',
+    'The Atom',
+    'The Avengers',
+    'Batgirl',
+    'Batman',
+    'Batwoman',
+  ]
 }
