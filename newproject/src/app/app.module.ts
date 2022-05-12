@@ -23,11 +23,12 @@ import { Parent2Component } from './parent2/parent2.component';
 import { Child2Component } from './child2/child2.component';
 import { Parent3Component } from './parent3/parent3.component';
 import { SiblingComponent } from './sibling/sibling.component';
-import { TaskComponent } from './task/task.component';
+
 
 /*******************post API***************/
 import { HttpClientModule} from '@angular/common/http';
-import { PostComponent } from './post/post.component'
+import { PostComponent } from './post/post.component';
+
 
 
 /***********************Routing*************************/
@@ -40,7 +41,6 @@ const appRoutes:Routes=[
   {path:'parent',component:ParentComponent},
   {path:'parent2',component:Parent2Component},
   {path:'parent3',component:Parent3Component},
-  {path:'task',component:TaskComponent},
   {path:'post',component:PostComponent},
   
 ]
@@ -58,7 +58,6 @@ const appRoutes:Routes=[
     Child2Component,
     Parent3Component,
     SiblingComponent,
-    TaskComponent,
     PostComponent,
 
   ],

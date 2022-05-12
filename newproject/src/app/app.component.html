@@ -15,10 +15,18 @@
       <li class="nav-item"><a class="nav-link" routerLink="/parent">Input</a></li>&nbsp;&nbsp;
       <li class="nav-item"><a class="nav-link" routerLink="/parent2">Output</a></li>&nbsp;&nbsp;
       <li class="nav-item"><a class="nav-link" routerLink="/parent3">Subject Service</a></li>&nbsp;&nbsp;
-      <li class="nav-item"><a class="nav-link" routerLink="/task">Task</a></li>&nbsp;&nbsp;
       <li class="nav-item"><a class="nav-link" routerLink="/post">Post API</a></li>&nbsp;&nbsp;
       
     </ul>
   </nav>
 </header>
 <router-outlet></router-outlet>
+
+
+<ul>
+  <h1>Get API content</h1>
+  <li *ngFor="let user of users">
+    {{user.name}}
+  </li>
+</ul>
+

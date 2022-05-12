@@ -17,7 +17,6 @@ export class PostComponent implements OnInit {
     .subscribe((result)=>{
       console.warn("result",result)
     })
-    console.warn(data);
   }
 
 }

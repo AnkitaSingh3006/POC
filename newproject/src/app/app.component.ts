@@ -12,6 +12,7 @@ export class AppComponent {
   constructor(private userData: UsersDataService) {
     this.userData.user().subscribe((data) => {
       console.warn("data", data);
+      this.users=data;
 
     })
   }
