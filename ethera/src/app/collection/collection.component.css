@@ -1,0 +1,148 @@
+.upperpart {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid black;
+}
+
+.lowerpart {
+    width: 100%;
+    height: 618px;
+}
+
+.container {
+    height: 95%;
+    width: 96%;
+    margin: 20px;
+}
+
+.container p {
+    font-size: 20px;
+}
+
+.parentportfoliooption {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.child-first {
+    width: 20%;
+    height: 40px;
+    margin-top: 10px;
+    float: left;
+}
+
+.child-second {
+    width: calc(100% - 20%);
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+}
+
+.profile-rupee {
+    width: 60%;
+    height: auto;
+    float: left;
+    border-right: 2px solid #df8f01;
+}
+
+.profile-rupee div {
+    display: inline-block;
+}
+
+.amount-account {
+    width: calc(100% - 60%);
+    height: auto;
+    float: left;
+}
+
+.user img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.user button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.separator {
+    width: 50px;
+    height: 10px;
+    border-top: 1px solid white;
+}
+
+.rupee button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+}
+
+.amount-account {
+    color: #df8f01;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.child-second div {
+    float: right;
+    margin-right: 20px;
+    border-radius: 15px;
+    border: 1px solid #df8f01;
+    color: #df8f01;
+    background-color: transparent;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.child-second .option-one {
+    width: 100px;
+    height: 30px;
+}
+
+.child-second .option-two {
+    width: 120px;
+    height: 30px;
+}
+
+.child-second .option-three {
+    width: 150px;
+    height: 30px;
+}
+
+.child-second .option-four {
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.child-second select {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: #df8f01;
+}
+
+.child-second option {
+    background-color: black;
+    color: white;
+    border: none;
+}
+.option-four button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: #df8f01;
+    border: none;
+}
