@@ -16,6 +16,8 @@
 }
 
 .container p {
+    height: 50px;
+    width: 100%;
     font-size: 20px;
 }
 
@@ -57,8 +59,8 @@
 }
 
 .user img {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
 }
 
@@ -84,7 +86,7 @@
     font-size: 20px;
     color: white;
     cursor: pointer;
-    background-color: black;
+    background-color:#292929;
 }
 
 .amount-account {
@@ -111,12 +113,12 @@
 }
 
 .child-second .option-two {
-    width: 120px;
+    width: 200px;
     height: 30px;
 }
 
 .child-second .option-three {
-    width: 150px;
+    width: 200px;
     height: 30px;
 }
 
@@ -132,17 +134,39 @@
     background-color: transparent;
     border: none;
     color: #df8f01;
+    outline: none;
 }
 
 .child-second option {
     background-color: black;
     color: white;
     border: none;
+    outline: none;
 }
 .option-four button{
     width: 100%;
     height: 100%;
     background-color: transparent;
     color: #df8f01;
+    border: none;
+}
+.child-second select:hover{
+    display: inline-block;
+}
+.dailoguebox {
+    width: 420px;
+    height: 350px;
+    margin-left: 35%;
+    text-align: center;
+    background-color: black;
+}
+
+.dailoguebox button{
+    width: 150px;
+    height: 40px;
+    margin: 30px;
+    color: white;
+    background-color: #df8f01;
+    border-radius: 5px;
     border: none;
 }
